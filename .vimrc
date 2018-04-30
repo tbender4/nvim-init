@@ -15,6 +15,11 @@ call plug#end()
 "easily get out of terminal mode
 "tnoremap <Esc> <C-\><C-n>?\$<CR>
 
+if $COLORTERM == 'gnome-terminal'
+  set t_Co=256
+endif
+
+
 syntax enable
 "set termguicolors
 color dracula
